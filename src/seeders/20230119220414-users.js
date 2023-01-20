@@ -6,7 +6,7 @@ module.exports = {
       {
         name: 'Thiago Bolinha',
         email: 'thiago@teste.com',
-        type: true,
+        isADM: true,
         password: '$2a$10$d6FSIaMgJ84XQPfnNFkrp.tDUOqtzKBJmhT1npclpUm2Au1QnKWL2',
         phoneNumber: '123456789',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -15,7 +15,7 @@ module.exports = {
       {
         name: 'Erika Pedrinha',
         email: 'erika@teste.com',
-        type: false,
+        isADM: false,
         password: '$2a$10$RlBAt.JdkQKyBpGFT2ATAuu0jSwW4LdWfeIZxjLuNbqUVeJEVAPoS',
         phoneNumber: '987654321',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),

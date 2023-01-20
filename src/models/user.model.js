@@ -2,7 +2,7 @@ const UserModel = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     name: DataTypes.STRING,
     email: DataTypes.STRING,
-    type: DataTypes.BOOLEAN,
+    isADM: DataTypes.BOOLEAN,
     password: DataTypes.STRING,
     phoneNumber: DataTypes.STRING,
   });

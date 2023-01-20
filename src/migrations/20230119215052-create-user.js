@@ -15,7 +15,7 @@ module.exports = {
       email: {
         type: Sequelize.STRING,
       },
-      type: {
+      isADM: {
         type: Sequelize.BOOLEAN,
       },
       password: {
