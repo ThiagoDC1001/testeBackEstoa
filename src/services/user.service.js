@@ -28,10 +28,10 @@ const userService = {
     await User.destroy({ where: {id} })
   },
 
-  async updateUser (data) {
-    console.log(data.id)
-    const updatedUser = await User.update({ data }, { where: {id} })
-    return updatedUser;
+  async updateUser (id, data) {    
+    // return User.findOne({where: {id}})
+    return User.update({ data }, { where: {id} })
+    // return updatedUser;
   }
 
 }

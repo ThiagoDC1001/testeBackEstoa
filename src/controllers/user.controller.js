@@ -35,8 +35,10 @@ const userController = {
   },
 
   async updateUser(req, res) {
-    const data = req.body;
-    const updated = await userService.updateUser(data);
+    const { id } = req.params
+    const data = req.body;    
+    const updated = await userService.updateUser(id, data);
+    res.status(201).json(updated)
   }
 }
 
