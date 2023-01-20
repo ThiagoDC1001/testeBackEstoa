@@ -22,6 +22,16 @@ const userService = {
     const newUser = await User.create({name, email, isADM, password: passwordHash, phoneNumber })
 
     return newUser;
+  },
+
+  async deleteUser (id) { 
+    await User.destroy({ where: {id} })
+  },
+
+  async updateUser (data) {
+    console.log(data.id)
+    const updatedUser = await User.update({ data }, { where: {id} })
+    return updatedUser;
   }
 
 }
